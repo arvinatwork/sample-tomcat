@@ -29,7 +29,7 @@ steps:
   inputs:
     sshEndpoint: CDAASAsiaSampleVMNew
     sourceFolder: $(Agent.BuildDirectory)/s/
-    contents: '*' 
+    contents: '**' 
     targetFolder: ~/sample-tomcat
     cleanTargetFolder: true
 
