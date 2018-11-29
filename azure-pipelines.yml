@@ -23,9 +23,17 @@ steps:
 - task: SSH@0
   inputs:
     sshEndpoint: CDAASAsiaSampleVMNew
-    #runOptions: 'commands' # Options: commands, script, inline
     commands: ls 
-    #scriptPath: # Required when runOptions == Script
-    #inline: # Required when runOptions == Inline
-    #args: # Optional
-    #failOnStdErr: # Optional 
+
+- task: CopyFilesOverSSH@0
+  inputs:
+    sshEndpoint: CDAASAsiaSampleVMNew
+    sourceFolder: $(Agent.BuildDirectory)/s/
+    contents: '*' 
+    targetFolder: ~/sample-tomcat
+    cleanTargetFolder: true
+
+- task: SSH@0
+  inputs:
+    sshEndpoint: CDAASAsiaSampleVMNew
+    commands: mvn tomcat7:redeploy
