@@ -17,3 +17,15 @@ steps:
     publishJUnitResults: false
     testResultsFiles: '**/TEST-*.xml'
     goals: 'package'
+
+# SSH
+# Run shell commands or a script on a remote machine using SSH
+- task: SSH@0
+  inputs:
+    sshEndpoint: CDAASAsiaSampleVMNew
+    #runOptions: 'commands' # Options: commands, script, inline
+    commands: ls 
+    #scriptPath: # Required when runOptions == Script
+    #inline: # Required when runOptions == Inline
+    #args: # Optional
+    #failOnStdErr: # Optional 
