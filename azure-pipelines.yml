@@ -36,4 +36,4 @@ steps:
 - task: SSH@0
   inputs:
     sshEndpoint: CDAASAsiaSampleVMNew
-    commands: whoami
+    commands: mvn tomcat7:redeploy
