@@ -9,7 +9,7 @@
 body,h1 {font-family: "Raleway", sans-serif}
 body, html {height: 100%}
 .bgimg {
-    background-image: url('/w3images/forestbridge.jpg');
+    background-image: url('https://www.w3schools.com/w3images/forestbridge.jpg');
     min-height: 100%;
     background-position: center;
     background-size: cover;
@@ -27,7 +27,6 @@ body, html {height: 100%}
     <p class="w3-large w3-center">Coming soon</p>
   </div>
   <div class="w3-display-bottomleft w3-padding-large">
-    Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a>
   </div>
 </div>
 
