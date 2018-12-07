@@ -26,11 +26,10 @@ body, html {height: 100%}
     <hr class="w3-border-grey" style="margin:auto;width:40%">
     <p class="w3-large w3-center">
         <button class="w3-large w3-center w3-btn" onclick="alert('Connection Failed')">Login</button>
-        <a href="/sample-tomcat/login.jsp">
+        <!-- <a href="/sample-tomcat/login.jsp">
             <button class="w3-large w3-center w3-btn">Login</button>
-        </a>
+        </a> -->
     </p>
-    
   </div>
   <div class="w3-display-bottomleft w3-padding-large">
   </div>
