@@ -25,12 +25,9 @@ steps:
     sshEndpoint: CDAASAsiaSampleVMNew
     commands: ls 
 
-- task: CopyFilesOverSSH@0
+- task: CopyFiles@2
   inputs:
-    sshEndpoint: CDAASAsiaSampleVMNew
-    contents: '**' 
     targetFolder: $(Build.ArtifactStagingDirectory)
-    cleanTargetFolder: true
 
 # Publish Build Artifacts
 # Publish build artifacts to Azure Pipelines/TFS or a file share
