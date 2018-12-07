@@ -22,7 +22,7 @@ body, html {height: 100%}
     Logo
   </div>
   <div class="w3-display-middle">
-    <h1 class="w3-jumbo w3-animate-top">Sample Tomcat Project</h1>
+    <h1 class="w3-jumbo w3-animate-top">Tomcat Project. This is a change.</h1>
     <hr class="w3-border-grey" style="margin:auto;width:40%">
     <p class="w3-large w3-center">
         <button class="w3-large w3-center w3-btn" onclick="alert('Connection Failed')">Login</button>
